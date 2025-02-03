@@ -1,5 +1,5 @@
 
-def check_signal_states(signal: list[int], expected: list[int]) -> bool:
+def check_signal_state_transition(signal: list[int], expected: list[int]) -> bool:
     """
     Check if the signal states of the given signal arrive in the expected order.
 
