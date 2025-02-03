@@ -27,8 +27,8 @@ class TestCheckSignalStates(unittest.TestCase):
         expected = [1, 2, 3]
         self.assertFalse(check_signal_states(signal, expected))
 
-    def test_no_non_numeric(self):
-        """Test when sequence is not present"""
+    def test_non_numeric(self):
+        """Test when sequence contain non-numeric entry"""
         signal = [1, 2, "A"]
         expected = [1, 2, "A"]
         self.assertTrue(check_signal_states(signal, expected))
